@@ -30,7 +30,7 @@ ul li {
 
 ul li a{
     display: block;
-    padding: 20px 25px;
+    padding: 20px 20px;
     color: #fff;
     text-decoration: none;
     text-align: center;
@@ -106,6 +106,19 @@ ul li:hover ul.dropdown {
     width: 25px;
 }
 
+@media (max-width: 1400px){
+    .div-01-layout{
+        background-position: 0px -100px;
+    }
+}
+
+@media (max-width: 500px){
+    .div-01-layout{
+        height: 40vh;
+        background-position: 0px -0px;
+    }
+}
+
 
 
 .div-02-layout{
@@ -130,6 +143,26 @@ ul li:hover ul.dropdown {
     color: #fff;
     font-size: 17px;
 }
+
+@media (max-width: 500px){
+    .div-02-layout{
+        width: 100%;
+        height: auto;
+        background-color: #0C2340;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-02-text-content{
+        width: 100%;
+        text-align: justify;
+        color: #fff;
+        font-size: 17px;
+    }
+}
+
 
 .div-03-layout{
     width: 100%;
@@ -182,12 +215,56 @@ ul li:hover ul.dropdown {
     text-align: center;
 }
 
+@media(max-width: 500px){
+    .div-03-layout{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+
+    .div-03-body{
+        width: 100%;
+    }
+
+    .div-03-icon{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 90%;
+        height: 100px;
+        margin: 20px 0px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .card img{
+        width: 60px;
+    }
+
+    .card-title{
+        width: 30%;
+        text-align: center;
+        font-size: 17px;
+        margin: 10px 0px;
+    }
+
+    .card-text-content{
+        width: 40%;
+        text-align: center;
+    }
+    
+}
+
 .div-04-layout{
- width: 100%;
- height: 300px;  
- display: flex;
- align-items: center;
- justify-content: center;
+    width: 100%;
+    height: 300px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .div-04-body{
@@ -261,6 +338,83 @@ ul li:hover ul.dropdown {
     width: 100%;
 }
 
+@media(max-width: 1400px){
+    .div-04-body{
+        width: 90%;
+    }
+
+    .div-04-right img{
+        position: relative;
+        right: 50px;
+        width: 150%;
+    }
+
+}
+
+@media(max-width: 500px){
+
+    .div-04-layout{
+        height: auto;  
+       }
+
+    .div-04-body{
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .div-04-right img{
+        width: 100%;
+    }
+
+    .div-04-left{
+        max-width: 350px;
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-04-title{
+        width: 90%;
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+        margin: 10px auto;
+    }
+
+    .div-04-text-content{
+        width: 90%;
+        text-align: center;
+        font-size: 17px;
+        color: #fff;
+    }
+
+    .buttons-div-04{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+    }
+
+    .div-04-right{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .div-04-right img{
+        width: 150%;
+        
+    }
+
+}
 .div-05-layout{
     width: 100%;
     height: auto;
@@ -304,4 +458,333 @@ ul li:hover ul.dropdown {
     font-size: 17px;
     text-decoration: none;
     color: #0C2340;
+}
+
+@media(max-width: 1400px){
+    .card01-title{
+        width: 80%;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 500px){
+
+    .div-05-layout{
+        flex-direction: column;
+    }
+
+    .card01{
+        width: 350px;
+        height: 150px;
+        margin: 20px 0px;
+    }
+
+    .card01-title{
+        width: 80%;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .card01 img{
+        display: none;
+    }
+
+}
+.div-06-layout{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.toptierdeals{
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    border-radius: 20px;
+    background-color: #f5f5f5;
+    flex: 0 0 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.car-card{
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.card-img{
+    width: 100%;
+    height: 150px;
+    background: url(/static/IMG/index/cars-card-img/PORSCHE_MACAN_2022.jpg);
+    background-size: 100%;
+    border-radius: 10px;
+}
+
+.car-condition{
+    font-size: 20px;
+    margin: 5px 10px;
+}
+
+.car-model{
+    font-size: 25px;
+    margin: 0px 10px;
+}
+
+.car-details{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detail-div-right{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px 10px;
+}
+
+.car-mileage{
+    font-size: 15px;
+}
+
+.car-exterior{
+    font-size: 15px;
+}
+
+.detail-div-left{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.check-deal{
+    width: 100%;
+    height: 40px;
+    background-color: #0C2340;
+    color: #fff;
+    border: 1px solid black;
+    margin: 50px auto;
+}
+
+.car-overview{
+    width: 50%;
+    height: 90%;
+    display: flex;
+}
+
+.overview-right{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.overview-title{
+    width: 200px;
+    font-size: 36px;
+    text-align: center;
+    background-color: #0C2340;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 10px;
+}
+
+.confort{
+    font-size: 23px;
+    margin: 10px 20px;
+    font-weight: 300;
+}
+
+.seats{
+    font-size: 15px;
+    text-align: left;
+    margin: 10px 40px;
+}
+
+.entertainment{
+    font-size: 23px;
+    margin: 10px 20px;
+    font-weight: 300;
+}
+
+.tech{
+    font-size: 15px;
+    text-align: left;
+    margin: 10px 40px;
+}
+
+.mechanical{
+    font-size: 23px;
+    margin: 10px 20px;
+    font-weight: 300;
+}
+
+.engine-tpype{
+    font-size: 15px;
+    text-align: left;
+    margin: 10px 40px;
+}
+
+.certified-icon-div{
+    width: 50%;
+    height: 100%;
+    background: url(/static/IMG/index/cars-card-img/badge\ \(1\).png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.certified-icon-div{
+    position: relative;
+    top: 130px;
+    left: 130px;
+}
+
+
+@media(max-width: 500px){
+
+    .toptierdeals{
+        font-size: 35px;
+    }
+    .car-overview{
+        display: none;
+    }
+}
+
+.div-07-layout{
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/static/IMG/index/index-sell-trade/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.div-07-body{
+    width: 40%;
+    height: 70%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    margin: 0px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title-div-07{
+    font-size: 17px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.title-02-div-07{
+    font-size: 30px;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.text-content-div-07{
+    width: 80%;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.div-07-btn{
+    width: 150px;
+    height: 40px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #0C2340;
+    color: #fff;
+    margin: 20px 0px;
+    transition: .3s all ease;
+}
+
+.div-07-btn:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color: #0C2340;
+    border: 1px solid #0C2340;
+}
+
+@media (max-width: 500px){
+    .div-07-layout{
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/static/IMG/index/index-sell-trade/bg.jpeg);
+        background-size: cover;
+        background-position: -600px -300px;
+        background-repeat:repeat;
+        display: flex;
+        align-items: center;
+    }
+
+    .div-07-body{
+        width: 60%;
+        height: 70%;
+        background-color: #f5f5f5;
+        border-radius: 10px;
+        margin: 0px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
 }
